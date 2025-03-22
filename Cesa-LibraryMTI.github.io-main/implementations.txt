@@ -1,0 +1,73 @@
+THIS IS OUR MINOR PROJECT FOR SEMESTER 4
+
+
+AIM: To implement a function Library website with html,css,js,php and mysql
+
+Goals:
+Front end
+  LOGIN page
+  ADMIN page
+    dashboard - Mithul
+    Total members - Mithul
+    total books - Rishikesh
+      available books
+        issue book
+      heldbooks
+      Search
+    profile - Rishikesh
+    not returned - Albin
+      monthly records
+      dues
+      other detials 
+    ADD book - Albin
+    
+  USER page
+    dashboard - Nirmal
+    profile - Nirmal
+    notifications - Nabeel
+    All books - Nabeel
+      search
+      available/taken
+        hold book
+
+Back end
+  dbms:
+    tables:
+    
+      users
+        uid: primary key
+        usertype
+        name
+        username
+        password
+
+      books
+        bookid: primary key
+        name
+        author
+        price
+        category
+
+      booklog
+        uid: foreign key
+        bookid: foreign key
+        issuedate
+        returndate
+
+    procedures:
+      check available
+      check taken
+
+    trigger:
+      check maxbook per user == 1
+      check holded books
+      check max held === 1    
+
+  javascript
+    validation user forms
+  php:
+    server side scripting
+    calculating fine
+
+try to add all the elements needed and also create the website and database structure
+just to test commit
